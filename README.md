@@ -94,49 +94,37 @@ EX: 8.3 Hackerrank challenges-III
 
 ### AIM: 
 
-To find the runner-up score from a list of participant scores.
+To read an integer n and print the cube of all non-negative integers less than n.
 
 ### ALGORITHM:
 
-Step 1: Start
+Step 1: Read the integer n from input.
 
-Step 2: Read the number of participants (n)
+Step 2: Iterate from 0 to n-1.
 
-Step 3: Read the scores as a list
-
-Step 4: Convert the scores list to a set to remove duplicates
-
-Step 5: Convert the set back to a list and sort it in ascending order
-
-Step 6: The runner-up score is the second last element of the sorted list
-
-Step 7: Print the runner-up score
-
-Step 8: Stop
-
+Step 3: For each number i, calculate i³ and print it.
 
 ### PROGRAM:
 
 
-```from abc import ABC
-if __name__ == '__main__':
-    n = int(input())
-    arr = map(int, input().split())
-    arr2 = list(set(arr))
-    arr2.sort()
-    print(arr2[-2])     
+```
+n=int(input())
+l=[]
+for i in range(n):
+    l.append(i)
+for i in l:
+    print(i**3)     
 ```
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/33587069-7d06-4efc-9d1b-a2de38296bd6)
+![image](https://github.com/user-attachments/assets/bd69dd6d-d387-4e5e-9dd4-d17d91855213)
 
 
 
 
 ### RESULT: 
 
-The program correctly identifies the runner-up score by removing duplicates, sorting, and selecting the second highest score.
-
+The program correctly prints the cubes of all non-negative integers less than the given number, each on a new line.
 
 
 EXP.No: 8.4  Hackerrank challenges-IV
